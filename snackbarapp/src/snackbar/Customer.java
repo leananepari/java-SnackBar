@@ -2,13 +2,17 @@ package snackbar;
 
 class Customer
 {
+  private static int maxId = 0;
+
   private int id;
   private String name;
   public double cash;
 
-  public Customer(int id, String name, double cash)
+  public Customer(String name, double cash)
   {
-    this.id = id;
+    maxId++;
+
+    this.id = maxId;
     this.name = name;
     this.cash = cash;
   }

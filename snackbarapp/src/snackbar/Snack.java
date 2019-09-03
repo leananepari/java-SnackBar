@@ -2,15 +2,19 @@ package snackbar;
 
 class Snack 
 {
+  private static int maxId = 0;
+
   private int id;
   private String name;
   private int quantity;
   private double cost;
   private int vendineMachineId;
 
-  public Snack(int id, String name, int quantity, double cost, int vendineMachineId)
+  public Snack(String name, int quantity, double cost, int vendineMachineId)
   {
-    this.id = id;
+    maxId++;
+
+    this.id = maxId;
     this.name = name;
     this.quantity = quantity;
     this.cost = cost;
