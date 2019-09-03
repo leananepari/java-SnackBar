@@ -17,5 +17,11 @@ public class SnackBar
 
     Snack soda = new Snack(4, "Soda", 24, 2.5, 2);
     Snack water = new Snack(5, "Water", 20, 2.75, 2);
+
+    soda.buySnack(3);
+    jane.buyItem(soda.totalCost(3));
+
+    System.out.println("Hello");
+    System.out.println(soda.getQuantity());
   }
 }

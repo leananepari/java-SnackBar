@@ -4,7 +4,7 @@ class Customer
 {
   private int id;
   private String name;
-  private double cash;
+  public double cash;
 
   public Customer(int id, String name, double cash)
   {
